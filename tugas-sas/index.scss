@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+$color1: rgb(37, 37, 37) rgb(37, 37, 37);
+$color2: rgb(65, 65, 255);
+$color3: red;
+// utiity
+button {
+  background-color: $color2;
+  padding: 15px 25px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Navbar
+nav {
+  color: white;
+  background-color: $color1;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      a {
+        padding: 10px;
+      }
+      a:hover {
+        background-color: rgba(177, 177, 177, 0.459);
+      }
+    }
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+// JUMBOTRON
+.jumbotron {
+  background-color: rgb(238, 238, 238);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .explained {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+  }
+}
+
+// Products
+.products {
+  margin-top: 50px;
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  flex-direction: column;
+
+  .list-products {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 30%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// ABOuT
+.about {
+  display: flex;
+  padding: 50px;
+  gap: 50px;
+  img {
+    width: 50%;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.contact {
+  background-color: rgb(238, 238, 238);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 30px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    margin-top: 20px;
+    input {
+      padding: 15px;
+      border-radius: 10px;
+      border: none;
+    }
+  }
+}
+
+footer {
+  background-color: $color1;
+  color: white;
+  padding: 50px;
+  .explained {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      width: 300px;
+    }
+
+    a {
+      color: white;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}
